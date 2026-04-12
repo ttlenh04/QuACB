@@ -1,0 +1,62 @@
+# Training Pipeline
+
+This directory contains the training and reproducibility pipeline for **QuCAB-UNet**, a U-Net-based crack segmentation model with a **Quantum-Inspired Channel Attention Bottleneck (QCAB)**.
+
+The pipeline is designed to support:
+- dataset preparation,
+- preprocessing,
+- model training,
+- validation and test evaluation,
+- bottleneck variant comparison,
+- and reproducible experimentation.
+
+## Overview
+
+The training pipeline is built for **binary crack segmentation**. It uses a controlled experimental setting so that different bottleneck variants can be compared fairly under the same backbone, preprocessing steps, optimization settings, and stopping criteria.
+
+The main compared variants are:
+- `none` — plain bottleneck
+- `SE` — squeeze-and-excitation bottleneck
+- `QCAB` — proposed quantum-inspired channel attention bottleneck
+
+## Dataset
+
+The project uses a manually annotated crack segmentation dataset derived from the **Concrete Crack Images for Classification** source dataset.
+
+### Dataset summary
+- Total images: **1,000**
+- Train split: **800**
+- Validation split: **100**
+- Test split: **100**
+- Split ratio: **80 / 10 / 10**
+- Random seed: **42**
+
+### Annotation format
+The dataset is stored in **COCO-style format** and then converted into binary segmentation masks for model training and evaluation.
+
+### Preprocessing
+The training pipeline applies the following preprocessing steps:
+- resize all images to **384 × 384**
+- convert annotations into **binary masks**
+- normalize image pixel values to **[0, 1]**
+- resize masks using **nearest-neighbor interpolation** to preserve label integrity
+
+## Expected Files
+
+Typical files used by this pipeline include:
+- `qcab_crack_segmentation_reproducible.ipynb` — main notebook for the full training workflow
+- `requirements.txt` — Python dependencies
+- `crack_segmentation_dataset_coco.zip` — crack segmentation dataset archive
+
+If your local filenames are slightly different, update the paths in the notebook accordingly.
+
+## Environment Setup
+
+It is recommended to run this pipeline in **Google Colab** or a local Python environment with GPU support.
+
+### Python dependencies
+
+Install the required packages with:
+
+```bash
+pip install -r requirements.txt
