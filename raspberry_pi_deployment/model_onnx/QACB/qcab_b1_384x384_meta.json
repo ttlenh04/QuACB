@@ -1,0 +1,13 @@
+{
+  "attention_type": "qcab",
+  "input_name": "input_image",
+  "input_shape": [
+    1,
+    384,
+    384,
+    3
+  ],
+  "best_threshold": 0.5499999999999999,
+  "output": "sigmoid_probability_map",
+  "recommended_postprocess": "mask = (prob >= best_threshold).astype(uint8)"
+}
