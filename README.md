@@ -71,7 +71,7 @@ This repository is intended for:
 If you use this code or dataset in your research, please cite:
 
 ```bibtex
-@article{pham2025qucabunet,
+@article{pham2026qucabunet,
   title   = {QuCAB-UNet: A Quantum-Inspired Channel Attention Bottleneck U-Net for Crack Segmentation},
   author  = {Pham, Lenh Phan Cong},
   journal = {The Visual Computer},
