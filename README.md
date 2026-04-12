@@ -64,3 +64,16 @@ This repository is intended for:
 - comparison of bottleneck variants,
 - QCAB-based model research,
 - and lightweight edge deployment testing.
+
+
+## Citation
+
+If you use this code or dataset in your research, please cite:
+
+```bibtex
+@article{pham2025qucabunet,
+  title   = {QuCAB-UNet: A Quantum-Inspired Channel Attention Bottleneck U-Net for Crack Segmentation},
+  author  = {Pham, Lenh Phan Cong},
+  journal = {The Visual Computer},
+  year    = {under review}
+}
