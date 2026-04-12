@@ -33,16 +33,17 @@ This training pipeline includes support for:
 - and reproducible crack segmentation experiments.
 
 ## Dataset
+The experiments are based on a manually annotated crack segmentation dataset derived from the Concrete Crack Images for Classification source.
 
-The experiments are based on a manually annotated crack segmentation dataset derived from the **Concrete Crack Images for Classification** source.
+A curated subset of 1,000 images was annotated at pixel level and divided into:
 
-A curated subset of **1,000 images** was annotated at pixel level and divided into:
+- 800 training images  
+- 100 validation images  
+- 100 test images  
 
-- **800** training images
-- **100** validation images
-- **100** test images
+All images and masks are resized to 384 × 384 for training and evaluation.
 
-All images and masks are resized to **384 × 384** for training and evaluation.
+The dataset used in these experiments is provided in the `crack_segmentation_dataset_coco` section/directory of this repository.
 
 ## Preprocessing
 
