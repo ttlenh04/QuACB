@@ -74,6 +74,5 @@ If you use this code or dataset in your research, please cite:
 @article{pham2026qucabunet,
   title   = {QuCAB-UNet: A Quantum-Inspired Channel Attention Bottleneck U-Net for Crack Segmentation},
   author  = {Pham, Lenh Phan Cong},
-  journal = {The Visual Computer},
   year    = {under review}
 }
